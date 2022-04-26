@@ -2,9 +2,17 @@ public class Book {
     private final String nameBook;
     private int publicationDate;
 
-    public Book(String nameBook, int publicationDate) {
+    private final String author;
+
+
+
+    public Book(String nameBook, int publicationDate, String author) {
         this.nameBook = nameBook;
         this.publicationDate = publicationDate;
+        this.author = author;
+    }
+    public String getAuthor() {
+        return this.author;
 
     }
 
